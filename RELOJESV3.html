@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RELOJES Y ESTILO TJ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f url('https://i.imgur.com/NOo9JrC.png') repeat;
+      background-size: 200px;
+      animation: backgroundMove 60s linear infinite;
+      overflow-x: hidden;
+      color: #f0f0f0;
+      position: relative;
+    }
+    @keyframes backgroundMove {
+      from { background-position: 0 0; }
+      to { background-position: 1000px 1000px; }
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      color: #e0e0e0;
+    }
+    nav {
+      background-color: #1a1a1a;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #ccc;
+      margin: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .slider {
+      position: relative;
+      overflow: hidden;
+      height: 300px;
+    }
+    .slides {
+      display: flex;
+      transition: transform 1s ease;
+    }
+    .slide {
+      flex: 1 0 100%;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+    .slide-text {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      background: rgba(0,0,0,0.5);
+      padding: 8px 15px;
+      border-radius: 8px;
+      font-size: 20px;
+      color: #fff;
+    }
+    .slider-buttons {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+      padding: 0 20px;
+    }
+    .slider-buttons button {
+      background: rgba(0,0,0,0.4);
+      border: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+    }
+    .search-bar {
+      text-align: center;
+      margin:
